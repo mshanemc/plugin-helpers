@@ -1,0 +1,38 @@
+{
+  "extends": [
+    "oclif",
+    "oclif-typescript",
+    "airbnb-base",
+    "airbnb-typescript/base",
+    "prettier/@typescript-eslint",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "plugins": ["prettier"],
+  "env": {
+    "node": true,
+    "es6": true
+  },
+  "rules": {
+    "no-await-in-loop": "warn",
+    "no-plusplus": "warn",
+    "no-use-before-define": "off",
+    "import/prefer-default-export": "warn",
+    "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/camelcase": "off",
+    "@typescript-eslint/no-unused-expressions": [
+      "error",
+      {
+        "allowTernary": true
+      }
+    ],
+    "unicorn/filename-case": [
+      "error",
+      {
+        "case": "camelCase"
+      }
+    ]
+  }
+}
