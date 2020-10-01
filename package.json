@@ -1,0 +1,50 @@
+{
+    "author": "mshanemc <shane.mclaughlin@salesforce.com>",
+    "dependencies": {
+        "@lifeomic/attempt": "^3.0.0",
+        "@salesforce/command": "^3.0.3",
+        "@salesforce/dev-config": "^2.0.0",
+        "chalk": "^4.1.0",
+        "fs-extra": "^9.0.1",
+        "js2xmlparser": "^4.0.1",
+        "strip-color": "^0.1.0",
+        "xml2js": "^0.4.23"
+    },
+    "description": "shared libraries for sfdx plugins",
+    "devDependencies": {
+        "@oclif/dev-cli": "^1.22.2",
+        "@oclif/plugin-help": "^3.2.0",
+        "@types/jest": "^26.0.14",
+        "@types/jsforce": "^1.9.23",
+        "@types/xml2js": "^0.4.5",
+        "@typescript-eslint/eslint-plugin": "^4.3.0",
+        "@typescript-eslint/parser": "^4.3.0",
+        "eslint": "^7.10.0",
+        "eslint-config-airbnb-typescript": "^11.0.0",
+        "eslint-config-oclif": "^3.1.0",
+        "eslint-config-oclif-typescript": "^0.2.0",
+        "eslint-config-prettier": "^6.12.0",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-prettier": "^3.1.4",
+        "husky": "^4.3.0",
+        "jest": "^26.4.2",
+        "prettier": "^2.1.2",
+        "rimraf": "^3.0.2",
+        "ts-jest": "^26.4.1",
+        "ts-node": "^9.0.0",
+        "typescript": "^4.0.3"
+    },
+    "files": [
+        "dist"
+    ],
+    "homepage": "",
+    "license": "ISC",
+    "main": "dist/index.js",
+    "module": "dist/index.js",
+    "name": "@mshanemc/plugin-helpers",
+    "scripts": {
+        "build": "rimraf ./dist && tsc",
+        "test": "echo \"Error: run tests from root\" && exit 1"
+    },
+    "version": "1.1.0"
+}
