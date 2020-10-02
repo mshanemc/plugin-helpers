@@ -1,6 +1,6 @@
 /* eslint-disable import/prefer-default-export */
 // eslint-disable-next-line unicorn/filename-case
-import { Connection } from '@salesforce/core';
+import { Connection } from '@salesforce/command/node_modules/@salesforce/core/lib/connection';
 
 import { CreateResult, QueryResult, Record, ContentVersionCreateRequest, ContentVersion } from './typeDefs';
 

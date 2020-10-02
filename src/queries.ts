@@ -1,4 +1,4 @@
-import { Connection } from '@salesforce/core';
+import { Connection } from '@salesforce/command/node_modules/@salesforce/core/lib/connection';
 import { retry } from '@lifeomic/attempt';
 import { QueryResult, Record } from './typeDefs';
 
@@ -43,4 +43,4 @@ const singleRecordQuery = async ({
     return result.records[0];
 };
 
-export { singleRecordQuery, SingleRecordQueryInputs, Connection };
+export { singleRecordQuery };
