@@ -1,11 +1,6 @@
-# `plugin-helpers`
+# Plugin Helpers
 
-> TODO: description
+This is a repo of common utilities used in TS-based sfdx plugins. It's here, in its own repo/npm package so that
 
-## Usage
-
-```
-const pluginHelpers = require('plugin-helpers');
-
-// TODO: DEMONSTRATE API
-```
+1. I can share them across multiple plugins
+2. people besides me could use parts of it
