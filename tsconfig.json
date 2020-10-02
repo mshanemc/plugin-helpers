@@ -2,12 +2,9 @@
     "extends": "./node_modules/@salesforce/dev-config/tsconfig",
     "include": ["./src"],
     "compilerOptions": {
-        "module": "commonjs",
-        "declaration": true,
         "outDir": "./dist",
         "baseUrl": "./",
-        "target": "es2019",
-        "moduleResolution": "node"
+        "target": "es2019"
     },
     "declaration": true
 }
