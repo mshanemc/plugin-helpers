@@ -13,7 +13,10 @@ export async function orgCreate(testProjectName) {
     return createResult;
 }
 export async function orgDelete(testProjectName) {
-    const deleteResult = await exec2JSON(`sfdx shane:org:delete --json`, {
+    // get the username from config
+    const username = (await exec2JSON(`sfdx config:get defaultusername --json`, { cwd: testProjectName })).result[0].value;
+    console.log(username);
+    const deleteResult = await exec2JSON(`sfdx force:org:delete -u ${username} -p --json`, {
         cwd: testProjectName
     });
     expect(deleteResult).toEqual(expect.objectContaining({ status: 0 }));

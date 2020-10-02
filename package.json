@@ -44,7 +44,7 @@
     "name": "@mshanemc/plugin-helpers",
     "scripts": {
         "build": "rimraf ./dist && tsc",
-        "test": "jest __tests__"
+        "test": "yarn build && jest __tests__"
     },
     "version": "1.1.0"
 }
