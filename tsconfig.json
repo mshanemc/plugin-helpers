@@ -3,7 +3,6 @@
     "compilerOptions": {
         "outDir": "./dist",
         "baseUrl": "./",
-        "module": "esnext",
         "target": "es2019",
         "moduleResolution": "node"
     },

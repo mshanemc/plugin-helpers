@@ -40,7 +40,6 @@
     "homepage": "",
     "license": "ISC",
     "main": "dist/index.js",
-    "module": "dist/index.js",
     "name": "@mshanemc/plugin-helpers",
     "scripts": {
         "build": "rimraf testProject*; rimraf ./dist; tsc",

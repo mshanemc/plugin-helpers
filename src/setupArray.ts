@@ -1,9 +1,9 @@
 import * as chalk from 'chalk';
 import { UX } from '@salesforce/command';
 
-const ux = await UX.create();
+const setupArray = async (existing, arrayName: string) => {
+    const ux = await UX.create();
 
-const setupArray = (existing, arrayName: string) => {
     const updated = replacementBuilder(existing[arrayName]);
     if (!Array.isArray(updated)) {
         ux.logJson(existing);
