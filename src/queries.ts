@@ -36,11 +36,11 @@ const singleRecordQuery = async ({
     }
     if (result.totalSize > 1) {
         if (returnChoices) {
-            throw new Error(`multiple records found: ${result.records.map(record => record[choiceField]).join(',')}`);
+            throw new Error(`multiple records found: ${result.records.map((record) => record[choiceField]).join(',')}`);
         }
         throw new Error('the query returned more than 1 record');
     }
     return result.records[0];
 };
 
-export { singleRecordQuery };
+export { singleRecordQuery, SingleRecordQueryInputs, Connection };
