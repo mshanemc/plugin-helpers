@@ -43,9 +43,9 @@
     "module": "dist/index.js",
     "name": "@mshanemc/plugin-helpers",
     "scripts": {
-        "build": "rimraf ./dist && tsc",
+        "build": "rimraf testProject*; rimraf ./dist; tsc",
         "test": "yarn build && jest __tests__",
-        "prepublish": "rimraf testProject*; yarn build;"
+        "prepare": "rimraf testProject*; yarn build;"
     },
     "version": "1.2.0"
 }
