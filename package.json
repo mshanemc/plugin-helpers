@@ -43,8 +43,8 @@
     "name": "@mshanemc/plugin-helpers",
     "scripts": {
         "build": "rimraf testProject*; rimraf ./dist; tsc",
-        "test": "yarn build && jest __tests__",
-        "prepare": "rimraf testProject*; yarn build;"
+        "prepare": "rimraf testProject*; yarn build;",
+        "test": "yarn build && jest __tests__"
     },
     "version": "2.0.0"
 }
