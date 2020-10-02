@@ -47,5 +47,5 @@
         "prepare": "rimraf testProject*; yarn build;",
         "test": "yarn build && jest __tests__"
     },
-    "version": "2.0.1"
+    "version": "2.0.2"
 }
